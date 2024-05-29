@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context="com.candle.aroma.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp">
+
+        <TextView
+            android:id="@+id/news_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/primary_deep"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/aroma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Blog &amp; News"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="90dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/candle1"
+                    android:clickable="true"
+                    android:onClick="blog1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="How to Choose the Right Candle for Your Mood and..."
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/candle4"
+                    android:clickable="true"
+                    android:onClick="blog2"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="The Best Candles for Every Season and Occasion..."
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/candle5"
+                    android:clickable="true"
+                    android:onClick="blog3"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="What You Need to Know About Candle Safety and Care..."
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/candle6"
+                    android:clickable="true"
+                    android:onClick="blog4"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="The Benefits of Aromatherapy Candles for Stress Relief and..."
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/candle7"
+                    android:clickable="true"
+                    android:onClick="blog5"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="How to Create a Romantic Atmosphere with Candles..."
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/new_arrivals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontal_scroll"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="New Arrivals"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/new_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="70dp"
+                android:scrollbars="horizontal" />
+
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="home"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/catalog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="catalog"
+            app:srcCompat="@drawable/catalog" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="likedItems"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="cart"
+            app:srcCompat="@drawable/cart" />
+
+        <ImageView
+            android:id="@+id/account"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="account"
+            app:srcCompat="@drawable/baseline_person_40" />
+    </LinearLayout>
+
+</RelativeLayout>

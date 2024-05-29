@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.candle.aroma.BlogActivity1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="center"
+            android:text="How to Choose the Right Candle for Your Mood and Personality"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/candle1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="start"
+            android:text="Candles have long been a beacon of light and serenity, transcending their basic utility to become a staple in homes for creating ambiance and enhancing mood. The vast array of scents, sizes, and colors available means that selecting the perfect candle is a personal journey that reflects your mood and personality. To find your candle match, start by understanding your scent preferences. Scent has the power to transport you to different places, bring back memories, and alter your mood. If you’re drawn to floral scents like rose or lavender, you’re likely someone who is romantic at heart and enjoys a touch of elegance. Citrus scents such as lemon or grapefruit are invigorating and ideal for those who are energetic and optimistic. Woody scents like sandalwood or cedar are grounding and suited for introspective and calm personalities.
+\n\n
+Consider why you’re lighting a candle. For relaxation, choose calming scents like chamomile or eucalyptus. To boost focus, opt for peppermint or cinnamon. For a cozy atmosphere, vanilla or amber can create a warm and inviting space. Colors also play a significant role in influencing mood. Align your candle’s color with how you want to feel: blue for tranquility, red for passion and energy, green for harmony and balance.
+\n\n
+Quality is paramount. Your candle should not only smell good but also burn cleanly and safely. Look for candles made with natural waxes like soy or beeswax and wicks that are lead-free. Ultimately, the right candle for you is one that feels personal and enhances your daily life. Don’t be afraid to mix scents and colors to match your unique personality. Remember, the right candle is not just about the fragrance or color; it’s about how it makes you feel. So, take your time, explore, and let your senses guide you to the perfect candle for your mood and personality.  🕯️✨"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

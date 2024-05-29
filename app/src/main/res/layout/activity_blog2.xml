@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.candle.aroma.BlogActivity1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="center"
+            android:text="The Best Candles for Every Season and Occasion"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/candle4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:gravity="start"
+            android:text="Candles are not just a source of light; they are a way to enhance the ambiance, evoke emotions, and celebrate the essence of each season and special occasion. Whether it’s the fresh bloom of spring or the festive cheer of the holiday season, there’s a candle to complement every moment.
+\n\n
+Spring brings new beginnings and the earth’s rebirth, so opt for candles with fresh, floral scents like lilac, peony, or rainwater to mirror the awakening of nature.
+\n\n
+Summer is all about vibrancy and energy. Choose candles with tropical, fruity, or oceanic fragrances to bring the zest of summer indoors. Think mango, coconut, or sea salt to capture the essence of sunny days and balmy nights.
+\n\n
+Autumn calls for warmth and comfort as the leaves change. Candles with notes of pumpkin, cinnamon, or apple reflect the season’s rich and cozy aromas, perfect for those crisp evenings.
+\n\n
+Winter is the season of reflection and celebration. Rich, deep scents like pine, gingerbread, or mulled wine can create a festive atmosphere, making them ideal for holiday gatherings and quiet nights by the fire.
+\n\n
+For special occasions, consider the mood you want to set. Birthdays call for fun and festive scents like vanilla cupcake or berry sorbet. Anniversaries might be marked with the elegance of rosewood or champagne. And for those quiet evenings of relaxation, nothing beats the classic calm of lavender or sandalwood.
+\n\n
+Remember, the best candle for any season or occasion is one that brings you joy and complements the moment. So, light up your favorite, and let the scents guide you through the year’s celebrations and quiet times alike. 🕯️✨"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

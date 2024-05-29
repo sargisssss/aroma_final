@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.candle.aroma.BlogActivity1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="center"
+            android:text="How to Create a Romantic Atmosphere with Candles and Music"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/candle7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="start"
+            android:text="Creating a romantic atmosphere is all about engaging the senses and setting the mood. Here’s a guide to using candles and music to craft a truly enchanting experience:
+\n\n
+Candles are the quintessential element for a romantic setting. Their soft glow provides a warm and inviting light that can make any space feel intimate and cozy. Choose candles with subtle scents that won’t overwhelm the senses, such as vanilla, jasmine, or rose. Place them strategically around the room to create a path of light that leads to a focal point, like a dining table or a comfortable seating area.
+\n\n
+Music is the language of the soul and plays a pivotal role in creating a romantic ambiance. Select a playlist that resonates with both you and your partner’s musical tastes. It could be a collection of jazz standards, classical pieces, or acoustic versions of your favorite songs. The key is to choose music that is soothing and melodic, with a tempo that encourages closeness and connection.
+\n\n
+Combine the candles and music with a few additional touches to enhance the romantic vibe:
+\n
+Soft textiles like plush cushions or a faux fur throw can add a tactile dimension to your setting.
+\n
+A bottle of wine or some champagne on ice can introduce an element of celebration.
+\n
+A simple, elegant arrangement of flowers can add a visual and aromatic touch to the room.
+\n
+Remember, the goal is to create an environment that feels personal and special. Take the time to consider what romance means to you, and let that guide your choices. With the flicker of candlelight and the harmony of music, you’ll set the stage for a memorable and romantic evening. 🕯️🎶✨"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

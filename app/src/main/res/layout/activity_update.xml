@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.candle.aroma.UpdateActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lavender_border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Data"
+                android:textAlignment="center"
+                android:textColor="@color/primary_deep"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/updateImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/uploadimg" />
+
+            <EditText
+                android:id="@+id/updateTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Product Name"
+                android:padding="16dp"
+                android:textColor="@color/primary_deep" />
+
+            <EditText
+                android:id="@+id/updateDesc"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Description"
+                android:padding="16dp"
+                android:textColor="@color/primary_deep" />
+
+            <EditText
+                android:id="@+id/updatePrice"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Price"
+                android:padding="16dp"
+                android:textColor="@color/primary_deep" />
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Update"
+                android:backgroundTint="@color/primary_deep"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

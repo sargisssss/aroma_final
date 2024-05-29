@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.candle.aroma.DetailActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/uploadimg" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:background="@color/secondary"
+                android:orientation="vertical" />
+
+            <ImageButton
+                android:id="@+id/likeButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_favorite_border_24" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="start"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Description"
+            android:textColor="@color/primary_deep"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_semibold"
+                android:paddingEnd="8dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/primary_deep"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/bux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingStart="2dp"
+                android:paddingEnd="8dp"
+                android:text="$"
+                android:textColor="@color/primary_deep"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/quantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="Quantity"
+                android:textColor="@color/primary_deep"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/decreaseQuantityButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_remove_24"
+                app:tint="@color/primary_deep" />
+
+            <TextView
+                android:id="@+id/quantityValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/primary_deep"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/increaseQuantityButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="increase quantity"
+                android:src="@drawable/ic_baseline_add_24"
+                app:tint="@color/primary_deep" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Add To Cart"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/reviewsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Reviews"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/down_arrow" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviewsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/addReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Add Review"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:progressDrawable="@drawable/custom_rating_bar"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+
+        <EditText
+            android:id="@+id/reviewEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter your review..."
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="3" />
+
+        <Button
+            android:id="@+id/submitReviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="Submit Review" />
+
+        <RelativeLayout
+            android:id="@+id/delete_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:menu_colorNormal="@color/primary_deep"
+                app:menu_colorPressed="@color/primary_deep"
+                app:menu_fab_size="normal"
+                app:menu_icon="@drawable/baseline_format_list_bulleted_24"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_edit_24"
+                    app:fab_colorNormal="@color/green"
+                    app:fab_showShadow="true"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/deleteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_delete_24"
+                    app:fab_colorNormal="@color/red"
+                    app:fab_showShadow="true"
+                    app:fab_size="mini" />
+            </com.github.clans.fab.FloatingActionMenu>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

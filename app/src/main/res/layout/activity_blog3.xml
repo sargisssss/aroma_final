@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.candle.aroma.BlogActivity1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="center"
+            android:text="What You Need to Know About Candle Safety and Care"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/candle5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="start"
+            android:text="Candle safety and care are crucial for ensuring that your candle-burning experience is both enjoyable and safe. Here’s what you need to know:
+\n\n
+Candles add warmth and ambiance to any space, but they come with a responsibility to use them safely. Always burn candles within sight, away from drafts and vibrations. Keep them out of reach of children and pets. Before lighting, trim the wick to about 1/4 inch to ensure a clean burn and prevent soot buildup on the container or surrounding objects.
+\n\n
+Never burn a candle for more than four hours at a time, and cool it for at least two hours before relighting. This prevents the potential for a high flame and excessive heat that can lead to container cracking. Ensure the candle is placed on a stable, heat-resistant surface to prevent heat damage to underlying surfaces and avoid accidental tipping.
+\n\n
+As the candle burns, maintain a wax pool free of wick trimmings, matches, or any combustible material that could catch fire. Keep the wax pool clear of debris to ensure the flame burns cleanly.
+\n\n
+When the candle has less than 1/2 inch of wax left, it’s time to say goodbye. Continuing to burn a candle past this point can be a fire hazard. Instead, consider repurposing the container or wax remnants for other uses.
+\n\n
+By following these simple guidelines, you can enjoy the beauty and fragrance of candles safely and responsibly. Remember, a little care goes a long way in preserving the life of your candles and the safety of your home. 🕯️✨"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

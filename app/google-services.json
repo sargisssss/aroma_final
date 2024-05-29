@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "119972548082",
+    "project_id": "aroma-1552c",
+    "storage_bucket": "aroma-1552c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119972548082:android:7128b9a1a094d98152ef6b",
+        "android_client_info": {
+          "package_name": "com.example.aroma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoHA6Q312WGXL4tuvWq8jThKoRfyhhxkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

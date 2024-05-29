@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.candle.aroma.BlogActivity1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="center"
+            android:text="The Benefits of Aromatherapy Candles for Stress Relief and Relaxation"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/candle6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:gravity="start"
+            android:text="Aromatherapy candles are a delightful fusion of light, warmth, and therapeutic scents that can transform your environment and mood. Here’s how they can aid in stress relief and relaxation:
+\n\n
+Aromatherapy candles harness the essence of essential oils, which are known for their ability to influence the limbic system — the part of the brain that controls emotions. When you light an aromatherapy candle, the heat releases the essential oils into the air, and as you breathe them in, they can help to soothe and calm your mind.
+\n\n
+Lavender is renowned for its relaxing properties, making it a popular choice for stress relief. It can help to lower heart rate and blood pressure, creating a sense of tranquility.
+\n\n
+Eucalyptus has a refreshing and clean scent that can clear the mind and promote concentration, while also having a cooling effect that relieves stress.
+\n\n
+Peppermint is stimulating and can help to alleviate feelings of nervous tension and stress, while also providing a boost of energy.
+\n\n
+Lemon and other citrus scents are uplifting and can help to improve mood, reduce anxiety, and promote a positive outlook.
+\n\n
+Sandalwood and Frankincense offer a grounding, earthy aroma that can be deeply relaxing and meditative, helping to reduce stress and anxiety.
+\n\n
+Using aromatherapy candles during activities like baths, meditation, or yoga can enhance the relaxation experience. Just remember to always follow candle safety guidelines to ensure a safe and enjoyable experience.
+\n\n
+By incorporating aromatherapy candles into your routine, you can create a sanctuary of peace and relaxation in your own home, helping to melt away the stresses of the day. 🕯️✨"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
